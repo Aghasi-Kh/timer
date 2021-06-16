@@ -4,7 +4,6 @@ public class Main {
 
 
     public static void main(String[] args) throws InterruptedException {
-        boolean x = true;
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter minute");
@@ -17,12 +16,12 @@ public class Main {
         System.out.println("Enter second");
         int second = scanner.nextInt();
         if (second > 60 || second < 0) {
-            System.out.println("Minute cannot be more than 60 and less than 0");
+            System.out.println("Second cannot be more than 60 and less than 0");
             System.out.println("Enter second");
             second = scanner.nextInt();
         }
         System.out.println("Timer:");
-        while (x) {
+        while (true) {
 
             System.out.println(minute + "m : " + second + "s");
             try {

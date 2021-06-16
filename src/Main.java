@@ -31,7 +31,7 @@ public class Main {
             }
             second--;
             if (second < 0) {
-                second = 60;
+                second = 59;
                 minute--;
                 if (minute < 0) {
                     System.out.println("Time is over!");

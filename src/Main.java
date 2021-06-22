@@ -20,26 +20,7 @@ public class Main {
             System.out.println("Enter second");
             second = scanner.nextInt();
         }
-        System.out.println("Timer:");
-        while (true) {
-
-            System.out.println(minute + "m : " + second + "s");
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            second--;
-            if (second < 0) {
-                second = 59;
-                minute--;
-                if (minute < 0) {
-                    System.out.println("Time is over!");
-                    break;
-                }
-            }
-
-
-        }
+        Timer timer=new Timer();
+        timer.timer(minute,second);
     }
 }

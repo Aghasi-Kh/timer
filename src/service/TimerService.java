@@ -1,6 +1,13 @@
-public class Timer {
-    public void timer(int min,int second){
+package service;
+
+
+import model.Timer;
+
+public class TimerService {
+    public void timer(Timer timer){
         System.out.println("Timer:");
+        int min=timer.getMinute();
+        int second=timer.getSecond();
         while (true) {
 
             System.out.println(min + "m : " + second + "s");
